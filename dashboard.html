@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ecolite · Dashboard de encuestas internas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Panel ejecutivo de resultados de la encuesta interna de áreas Ecolite. Visualiza promedios, distribución de calificaciones y volumen de respuestas." />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <div class="logo">Ecolite</div>
+        <p class="tagline">Panel de resultados de la encuesta interna</p>
+      </div>
+      <div class="header-actions">
+        <a href="/" class="btn btn-outline">Ver encuesta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <!-- KPIs -->
+    <section class="container dashboard-kpis">
+      <div class="kpi-card">
+        <p class="kpi-label">Respuestas totales</p>
+        <p class="kpi-value" id="total-responses">0</p>
+        <p class="kpi-sub">Personas que han completado la encuesta.</p>
+      </div>
+
+      <div class="kpi-card">
+        <p class="kpi-label">Promedio general</p>
+        <p class="kpi-value" id="global-average">-</p>
+        <p class="kpi-sub">Promedio de todas las calificaciones (escala 1 a 4).</p>
+      </div>
+
+      <div class="kpi-card">
+        <p class="kpi-label">Última actividad</p>
+        <p class="kpi-value kpi-small" id="latest-response-date">Sin datos</p>
+        <p class="kpi-sub">
+          <button id="reload-btn" class="btn btn-outline small">Actualizar datos</button>
+        </p>
+      </div>
+    </section>
+
+    <!-- Gráficas principales -->
+    <section class="container dashboard-grid">
+      <div class="dashboard-panel">
+        <div class="panel-header">
+          <h2>Promedio por área</h2>
+          <p class="panel-subtitle">Comparación del desempeño promedio de cada área evaluada.</p>
+        </div>
+        <canvas id="areaAverageChart"></canvas>
+      </div>
+
+      <div class="dashboard-panel">
+        <div class="panel-header">
+          <h2>Distribución global de calificaciones</h2>
+          <p class="panel-subtitle">Cómo se reparten los valores 1 a 4 en todas las respuestas.</p>
+        </div>
+        <canvas id="globalDistChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="container dashboard-panel">
+      <div class="panel-header">
+        <h2>Respuestas por día</h2>
+        <p class="panel-subtitle">Volumen de encuestas completadas a lo largo del tiempo.</p>
+      </div>
+      <canvas id="timelineChart"></canvas>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 Ecolite Corp — Panel interno de resultados.</p>
+      <p class="footer-note">Uso exclusivo interno · Datos confidenciales.</p>
+    </div>
+  </footer>
+
+  <!-- Chart.js desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- JS del dashboard -->
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>

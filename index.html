@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ecolite · Evaluación de Áreas de la Compañía</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Encuesta anónima de satisfacción de áreas internas de Ecolite. Califique del 1 al 4 Comercial, Marketing, Finanzas, Logística, Compras y Recursos Humanos." />
+  <meta name="theme-color" content="#78c341" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <div class="logo">
+<img style="width: 100px;" src="https://ecolite.com.co/wp-content/uploads/2023/04/logo-ecolite.png" alt="">
+          <span class="logo-tag">Evaluación interna</span>
+        </div>
+        <p class="tagline">
+          Encuesta confidencial para medir el desempeño de las áreas estratégicas de la compañía.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Evaluación de Áreas de la Compañía</h1>
+          <p class="hero-subtitle">
+            Esta encuesta es <strong>100% anónima</strong> y nos ayuda a entender
+            cómo están funcionando las principales áreas de Ecolite, para tomar
+            mejores decisiones y mejorar la experiencia de todos.
+          </p>
+
+          <div class="hero-chips">
+            <span class="chip">Anónima</span>
+            <span class="chip">Escala 1 a 4</span>
+            <span class="chip">Duración 5–8 min</span>
+          </div>
+
+          <ul class="hero-bullets">
+            <li>Evalúa Comercial, Marketing, Finanzas, Logística, Compras y RRHH.</li>
+            <li>Responde según tu experiencia real de trabajo con cada área.</li>
+            <li>Tu opinión se usará solo para mejora interna.</li>
+          </ul>
+
+          <a href="#encuesta" class="btn btn-primary">Comenzar evaluación</a>
+        </div>
+
+        <div class="hero-card">
+          <h2>¿Cómo funciona la escala?</h2>
+          <ul class="scale-list">
+            <li><strong>1</strong> — Deficiente (cumple parcialmente, muchas oportunidades de mejora)</li>
+            <li><strong>2</strong> — Aceptable (cumple lo básico, pero con limitaciones)</li>
+            <li><strong>3</strong> — Bueno (cumple de manera sólida, con pocas oportunidades de mejora)</li>
+            <li><strong>4</strong> — Excelente (cumple plenamente, con resultados sobresalientes)</li>
+          </ul>
+          <p class="hero-note">
+            Selecciona un número del <strong>1 al 4</strong> por cada afirmación según tu percepción.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENCUESTA -->
+    <section id="encuesta" class="survey-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Encuesta de satisfacción por área</h2>
+          <p>
+            Marca una opción del <strong>1 al 4</strong> en cada afirmación. No hay respuestas correctas o incorrectas.
+          </p>
+        </header>
+
+        <form id="encuesta-form">
+          <!-- 1. COMERCIAL -->
+          <section class="area-card">
+            <header class="area-header">
+              <div>
+                <p class="area-tag">Área</p>
+                <h3>Comercial</h3>
+              </div>
+              <p class="area-meta">Relación con clientes · Objetivos de ventas · Uso de herramientas</p>
+            </header>
+
+            <div class="question-grid">
+              <div class="question-row">
+                <p class="question-text">¿Cómo es su comunicación con esta área?</p>
+                <div class="rating-group">
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_comunicacion" value="1" required />
+                    <span>1</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_comunicacion" value="2" />
+                    <span>2</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_comunicacion" value="3" />
+                    <span>3</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_comunicacion" value="4" />
+                    <span>4</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan bien se identifican y atienden las necesidades del cliente?</p>
+                <div class="rating-group">
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_necesidades" value="1" required />
+                    <span>1</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_necesidades" value="2" />
+                    <span>2</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_necesidades" value="3" />
+                    <span>3</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_necesidades" value="4" />
+                    <span>4</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan efectiva es la relación con clientes actuales y potenciales?</p>
+                <div class="rating-group">
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_relacion_clientes" value="1" required />
+                    <span>1</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_relacion_clientes" value="2" />
+                    <span>2</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_relacion_clientes" value="3" />
+                    <span>3</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_relacion_clientes" value="4" />
+                    <span>4</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Se cumplen los objetivos de ventas de manera consistente?</p>
+                <div class="rating-group">
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_objetivos" value="1" required />
+                    <span>1</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_objetivos" value="2" />
+                    <span>2</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_objetivos" value="3" />
+                    <span>3</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_objetivos" value="4" />
+                    <span>4</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">
+                  ¿El equipo comercial utiliza herramientas modernas (CRM, dashboards, reportes) para gestionar clientes?
+                </p>
+                <div class="rating-group">
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_herramientas" value="1" required />
+                    <span>1</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_herramientas" value="2" />
+                    <span>2</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_herramientas" value="3" />
+                    <span>3</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_herramientas" value="4" />
+                    <span>4</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">
+                  ¿Qué tan clara y diferenciada es la propuesta de valor frente a la competencia en el proceso de ventas?
+                </p>
+                <div class="rating-group">
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_propuesta_valor" value="1" required />
+                    <span>1</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_propuesta_valor" value="2" />
+                    <span>2</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_propuesta_valor" value="3" />
+                    <span>3</span>
+                  </label>
+                  <label class="rating-pill">
+                    <input type="radio" name="comercial_propuesta_valor" value="4" />
+                    <span>4</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ÁREA MARKETING -->
+          <section class="area-card">
+            <header class="area-header">
+              <div>
+                <p class="area-tag">Área</p>
+                <h3>Área de Marketing</h3>
+              </div>
+              <p class="area-meta">Estrategia · Posicionamiento · Soporte a Comercial</p>
+            </header>
+
+            <div class="question-grid">
+              <div class="question-row">
+                <p class="question-text">¿Cómo es su comunicación con esta área?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="marketing_comunicacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_comunicacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_comunicacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_comunicacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Las estrategias de marketing generan resultados medibles (leads, tráfico, posicionamiento)?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="marketing_resultados" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_resultados" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_resultados" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_resultados" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan bien se segmenta y conoce el mercado objetivo?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="marketing_segmentacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_segmentacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_segmentacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_segmentacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Se utilizan canales digitales y tradicionales de manera efectiva?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="marketing_canales" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_canales" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_canales" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_canales" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan creativas y diferenciadas son las campañas de comunicación?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="marketing_creatividad" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_creatividad" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_creatividad" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_creatividad" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">
+                  ¿El marketing aporta información útil para apoyar al área comercial en la captación de clientes?
+                </p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="marketing_apoyo_comercial" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_apoyo_comercial" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_apoyo_comercial" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="marketing_apoyo_comercial" value="4" /><span>4</span></label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FINANZAS / CONTABILIDAD -->
+          <section class="area-card">
+            <header class="area-header">
+              <div>
+                <p class="area-tag">Área</p>
+                <h3>Finanzas / Contabilidad</h3>
+              </div>
+              <p class="area-meta">Información financiera · Costos · Flujo de caja</p>
+            </header>
+
+            <div class="question-grid">
+              <div class="question-row">
+                <p class="question-text">¿Cómo es su comunicación con esta área?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="finanzas_comunicacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_comunicacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_comunicacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_comunicacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan confiable y actualizado es el manejo de la información financiera?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="finanzas_confiabilidad" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_confiabilidad" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_confiabilidad" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_confiabilidad" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Se cumplen las obligaciones fiscales y normativas sin retrasos?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="finanzas_obligaciones" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_obligaciones" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_obligaciones" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_obligaciones" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿La compañía tiene control sobre costos y márgenes de rentabilidad?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="finanzas_costos" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_costos" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_costos" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_costos" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan clara es la información financiera para la toma de decisiones?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="finanzas_claridad" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_claridad" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_claridad" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_claridad" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Se proyecta y gestiona adecuadamente el flujo de caja?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="finanzas_flujo_caja" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_flujo_caja" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_flujo_caja" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="finanzas_flujo_caja" value="4" /><span>4</span></label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- LOGÍSTICA -->
+          <section class="area-card">
+            <header class="area-header">
+              <div>
+                <p class="area-tag">Área</p>
+                <h3>Área de Logística (Preparación de mercancías y despachos)</h3>
+              </div>
+              <p class="area-meta">Pedidos · Despachos · Devoluciones</p>
+            </header>
+
+            <div class="question-grid">
+              <div class="question-row">
+                <p class="question-text">¿Cómo es su comunicación con esta área?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="logistica_comunicacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_comunicacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_comunicacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_comunicacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan eficiente es la preparación de pedidos y embalaje de mercancías?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="logistica_preparacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_preparacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_preparacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_preparacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Se cumplen los tiempos de despacho y entrega comprometidos con los clientes?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="logistica_tiempos" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_tiempos" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_tiempos" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_tiempos" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan confiable es la coordinación entre almacén, transporte y distribución?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="logistica_coordinacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_coordinacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_coordinacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_coordinacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">
+                  ¿Se minimizan errores en la preparación de pedidos (productos correctos, cantidades exactas)?
+                </p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="logistica_errores" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_errores" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_errores" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_errores" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan bien se gestionan devoluciones y reclamos logísticos?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="logistica_devoluciones" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_devoluciones" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_devoluciones" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="logistica_devoluciones" value="4" /><span>4</span></label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- COMPRAS -->
+          <section class="area-card">
+            <header class="area-header">
+              <div>
+                <p class="area-tag">Área</p>
+                <h3>Área de Compras</h3>
+              </div>
+              <p class="area-meta">Proveedores · Inventario · Innovación en portafolio</p>
+            </header>
+
+            <div class="question-grid">
+              <div class="question-row">
+                <p class="question-text">¿Cómo es su comunicación con esta área?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="compras_comunicacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_comunicacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_comunicacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_comunicacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan efectiva es la selección y negociación con proveedores?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="compras_proveedores" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_proveedores" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_proveedores" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_proveedores" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Se asegura la disponibilidad de inventario en función de la demanda?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="compras_disponibilidad" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_disponibilidad" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_disponibilidad" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_disponibilidad" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan innovadora es la gestión de compras para introducir nuevos productos o tecnologías?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="compras_innovacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_innovacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_innovacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_innovacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Se optimizan costos de adquisición sin sacrificar calidad?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="compras_costos" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_costos" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_costos" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_costos" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">
+                  ¿Qué tan confiable es el control de inventarios y la planificación de abastecimiento?
+                </p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="compras_inventario" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_inventario" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_inventario" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="compras_inventario" value="4" /><span>4</span></label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- RECURSOS HUMANOS -->
+          <section class="area-card">
+            <header class="area-header">
+              <div>
+                <p class="area-tag">Área</p>
+                <h3>Recursos Humanos</h3>
+              </div>
+              <p class="area-meta">Selección · Desarrollo · Clima laboral</p>
+            </header>
+
+            <div class="question-grid">
+              <div class="question-row">
+                <p class="question-text">¿Cómo es su comunicación con esta área?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="rrhh_comunicacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_comunicacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_comunicacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_comunicacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan adecuado es el proceso de selección y contratación?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="rrhh_seleccion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_seleccion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_seleccion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_seleccion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿La capacitación y desarrollo del personal es constante y útil?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="rrhh_capacitacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_capacitacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_capacitacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_capacitacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Se promueve un buen clima laboral y motivación?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="rrhh_clima" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_clima" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_clima" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_clima" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Qué tan justo y transparente es el sistema de compensación?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="rrhh_compensacion" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_compensacion" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_compensacion" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_compensacion" value="4" /><span>4</span></label>
+                </div>
+              </div>
+
+              <div class="question-row">
+                <p class="question-text">¿Existen planes de crecimiento y retención de talento?</p>
+                <div class="rating-group">
+                  <label class="rating-pill"><input type="radio" name="rrhh_talento" value="1" required /><span>1</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_talento" value="2" /><span>2</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_talento" value="3" /><span>3</span></label>
+                  <label class="rating-pill"><input type="radio" name="rrhh_talento" value="4" /><span>4</span></label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FOOTER FORM -->
+          <div class="form-footer">
+            <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+            <p class="privacy-note">
+              Tus respuestas son anónimas y se utilizarán únicamente para fines de mejora interna en Ecolite.
+            </p>
+          </div>
+
+          <div id="encuesta-success" class="success-message" aria-live="polite">
+            ¡Gracias por completar la evaluación! Tus respuestas han sido registradas.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 Ecolite — Evaluación interna de áreas.</p>
+      <p class="footer-note">Confidencial · Uso exclusivo interno.</p>
+    </div>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
