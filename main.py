@@ -171,3 +171,58 @@ def get_stats():
         ],
         "stats": stats,
     }
+@app.get("/api/comments")
+def get_comments():
+    """
+    Devuelve los comentarios abiertos (preguntas tipo texto) agrupados por área.
+
+    Considera como comentario cualquier campo cuyo nombre termine en "_mejoras"
+    y cuyo valor sea un texto no vacío.
+    """
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cur = conn.cursor()
+        cur.execute("SELECT data, created_at FROM survey_responses ORDER BY created_at DESC")
+        rows = cur.fetchall()
+        conn.close()
+    except Exception as e:
+        print("Error leyendo comentarios:", e)
+        raise HTTPException(status_code=500, detail="Error leyendo datos de la base")
+
+    comments = []
+
+    for data_json, created_at in rows:
+        try:
+            payload = json.loads(data_json)
+        except json.JSONDecodeError:
+            continue
+
+        for key, val in payload.items():
+            # Solo tomamos campos de texto tipo "..._mejoras"
+            if not isinstance(val, str):
+                continue
+            text = val.strip()
+            if not text:
+                continue
+            if not key.endswith("_mejoras"):
+                continue
+
+            # área = prefijo antes del primer "_", o el propio key si no hay "_"
+            if "_" in key:
+                area_key = key.split("_", 1)[0]
+            else:
+                area_key = key
+
+            comments.append(
+                {
+                    "area_key": area_key,
+                    "field": key,
+                    "text": text,
+                    "created_at": created_at,
+                }
+            )
+
+    # Para no reventar la UI, limitamos a los últimos 200 comentarios
+    comments = comments[:200]
+
+    return {"comments": comments}

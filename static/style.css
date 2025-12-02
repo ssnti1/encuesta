@@ -497,6 +497,7 @@ body {
   padding: 1.4rem 1.6rem;
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-soft);
+  margin-bottom: 1.8rem;
 }
 
 .panel-header {
@@ -534,4 +535,151 @@ body {
   .dashboard-grid {
     grid-template-columns: minmax(0, 1fr);
   }
+}
+/* ==========
+   Textareas de preguntas abiertas
+   (para todos los <textarea> dentro de las filas de preguntas
+   y para los que usen la clase .open-text)
+   ========== */
+
+
+
+.question-row textarea,
+.open-text {
+  width: 100%;
+  min-height: 110px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.6); /* gris suave */
+  padding: 0.75rem 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-family: inherit;
+  resize: vertical;
+  background-color: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 0 0 0 rgba(120, 195, 65, 0);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.question-row textarea::placeholder,
+.open-text::placeholder {
+  color: #94a3b8; /* placeholder gris */
+}
+
+.question-row textarea:focus,
+.open-text:focus {
+  outline: none;
+  border-color: #78c341; /* verde Ecolite */
+  box-shadow: 0 0 0 2px rgba(120, 195, 65, 0.18);
+  background-color: #f8fafc;
+}
+
+/* ===== Tarjetas de comentarios en dashboard ===== */
+.comment-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.comment-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #111827;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+.comment-card small {
+  display: block;
+  margin-top: 0.4rem;
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+.comments-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* =========================
+   Filtros e insights del dashboard
+   ========================= */
+
+/* Filtros de comentarios (área + búsqueda) */
+.comments-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+.comments-filters label {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  margin-right: 0.4rem;
+}
+
+.comments-filters select {
+  min-width: 210px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+  background: #ffffff;
+}
+
+.comments-search input[type="search"] {
+  min-width: 220px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+.comments-search input[type="search"]:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(120, 195, 65, 0.16);
+}
+
+/* Cards de insights ejecutivos */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.insight-card {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--border-subtle);
+}
+
+.insight-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-soft);
+  margin: 0 0 0.4rem;
+}
+
+.insight-value {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.insight-sub {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
