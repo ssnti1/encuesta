@@ -280,7 +280,6 @@ document.addEventListener("DOMContentLoaded", () => {
         chip.textContent = `${label}: ${count} comentario${
           count === 1 ? "" : "s"
         }`;
-        frag.appendChild(chip);
       });
       commentsSummaryEl.appendChild(frag);
     }
