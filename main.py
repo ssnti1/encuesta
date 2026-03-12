@@ -8,23 +8,19 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-# Ruta del archivo de base de datos
 DB_PATH = Path("encuestas.db")
 
 app = FastAPI()
 
-# ✅ CORS: permite que tu HTML (aunque lo abras desde otro origen) pueda llamar al API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],         # Si luego tienes dominio fijo, cámbialo
+    allow_origins=["*"],      
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# ✅ Archivos estáticos (CSS, JS, etc.)
-# Crea una carpeta llamada "static" al lado de este main.py
-# y coloca allí: style.css, script.js, dashboard.js
+
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
